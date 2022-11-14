@@ -101,6 +101,7 @@ class _LoginPageState extends State<LoginPage> {
             .showSnackBar(SnackBar(content: Text("Token: ${body['token']}")));
         print("login Token" + response.toString());
         pageRoute(body['token']);
+
       } else {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text("Invalid Credentials")));
@@ -117,7 +118,6 @@ class _LoginPageState extends State<LoginPage> {
     SharedPreferences pref = await SharedPreferences.getInstance();
     await pref.setString("login", token);
     Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => DashBoard()),
-            (route) => false);
+        MaterialPageRoute(builder: (context) => DashBoard()), (route) => false);
   }
 }
