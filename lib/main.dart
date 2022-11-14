@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 
-import 'getx/login/view/login_getx.dart';
+import 'login_shared_preferences_getx/view/login_pref_getx.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginGetX(),
+      home: const LoginPrefGetX(),
     );
   }
 }
