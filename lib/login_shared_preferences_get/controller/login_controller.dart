@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
-import 'package:login_register_flutter/login_shared_preferences_getx/model/user_model.dart';
+import 'package:login_register_flutter/login_shared_preferences_get/model/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../view/second_screen_pref.dart';
